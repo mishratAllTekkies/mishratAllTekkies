@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/home_dest">
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.htf.zbCard.ui.home.DashBoardFragment"
+        android:label="@string/home"
+        tools:layout="@layout/dashborad_fragment">
+
+        <action
+            android:id="@+id/action_home_to_details"
+            app:destination="@id/details_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_graph_cart_info"
+        android:name="com.htf.zbCard.ui.cart.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/cart_fragment" />
+
+    <fragment
+        android:id="@+id/nav_graph_order"
+        android:name="com.htf.zbCard.ui.order.OrderFragment"
+        android:label="@string/order"
+        tools:layout="@layout/order_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_graph_favourite"
+        android:name="com.htf.zbCard.ui.favourite.FavouriteFragment"
+        android:label="@string/favourite"
+        tools:layout="@layout/favourite_fragment" />
+
+
+    <fragment
+        android:id="@+id/details_dest"
+        android:name="com.htf.zbCard.ui.homeDetail.CategoryDetailFragment"
+        android:label="@string/product_detail"
+        tools:layout="@layout/category_detail_fragment" />
+
+
+</navigation>

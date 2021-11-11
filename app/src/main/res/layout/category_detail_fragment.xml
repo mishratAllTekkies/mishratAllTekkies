@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="detailsViewModel"
+            type="com.htf.zbCard.ui.homeDetail.CategoryDetailViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/appBarLayoutMenuInclude"
+            layout="@layout/app_bar_layout_menu" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:background="@color/color_white"
+            app:tabBackground="@color/color_white"
+            app:tabIndicatorColor="@color/colorTextOrange"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            android:layout_below="@+id/title"
+            app:tabSelectedTextColor="@color/colorTextOrange"
+            app:tabTextAppearance="@style/TabLayout"
+            app:tabTextColor="@color/lightGrey" />
+
+        <FrameLayout
+            android:layout_below="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivDataNotFound"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:id="@+id/tv_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avenir_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</layout>
+
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZB Card</string>
+    <string name="noConnection">No Internet Connection available.</string>
+    <string name="turnOnInternet">Turn On your Internet !!</string>
+    <string name="mobileData">Mobile data</string>
+    <string name="wifi">WIFI</string>
+    <string name="server_error">Sorry Server is facing some technical issues. please try after some time.</string>
+    <string name="arabic">العربية</string>
+    <string name="english">English</string>
+    <string name="keep_smiling_and_stay_healthy"><![CDATA[Keep Smiling & Stay Healthy]]></string>
+    <string name="enter_your_mobile_no">Enter your \nmobile number</string>
+    <string name="you_will_receive_4_digit_code_to_verify_next">You\'ll receive a 4 digit code to verify next.</string>
+    <string name="next">Next</string>
+    <string name="mobile_no_required">Please Enter Your mobile number to continue.</string>
+    <string name="invalid_mobile">Invalid Mobile number</string>
+    <string name="enter_code_sent_to_your_number">Enter code sent \nto your number</string>
+    <string name="we_sent_it_to_the_number">We sent it to the number [x]</string>
+    <string name="dint_receive_the_otp">Didn\'t receive the otp?</string>
+    <string name="resend_otp">Resend Otp</string>
+    <string name="location_detection">The location will be detected to show the nearest shops to you</string>
+    <string name="detect_location">Detect Location</string>
+    <string name="continues">Continue</string>
+    <string name="complete_address">Complete Address</string>
+    <string name="clear_all">Clear All</string>
+    <string name="detect_your_location">Detect your location</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="order">Order</string>
+    <string name="favourite">Favourite</string>
+    <string name="product_detail">Product Details</string>
+    <string name="view_all">View All</string>
+    <string name="order_From">Order from the</string>
+    <string name="preferred_vendor">preferred vendor</string>
+    <string name="delivery">Delivery</string>
+    <string name="customer">Customer</string>
+    <string name="service">Service</string>
+    <string name="all">All</string>
+    <string name="sign_up">Sign up</string>
+    <string name="phone_number">Phone number</string>
+    <string name="_966">+966</string>
+    <string name="email_or_mobile">Enter Your Email or Mobile</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_user">Already a user</string>
+    <string name="login">Log In</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#371257</color>
+    <color name="colorPrimaryDark">#171D2A</color>
+    <color name="colorAccent">#602990</color>
+    <color name="splashColor">#202334</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="colorTextOrange">#FF623B</color>
+    <color name="colorLightOrange">#FFEFEB</color>
+    <color name="lightGrey">#999999</color>
+    <color name="colorAppVersion">#8E8E93</color>
+    <color name="screen_bg">#EDEDED</color>
+    <color name="dark_text">#202334</color>
+    <color name="header_bg">#202334</color>
+    <color name="red_color">#EF4848</color>
+    <color name="gray1">#E5E5E5</color>
+    <color name="sign_up_green">#2C6961</color>
+    <color name="colorEditTextStroke">#DDDDDD</color>
+    <color name="colorTextHeading">#333333</color>
+
+</resources>

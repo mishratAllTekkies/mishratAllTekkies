@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="detectLocationViewModel"
+            type="com.htf.zbCard.ui.location.DetectLocationViewModel"/>
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:paddingBottom="@dimen/dimen_200"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_detection"
+                android:textColor="@color/splashColor"
+                android:textSize="@dimen/font_16sp"
+                android:layout_below="@+id/ivLocation"
+                android:textAlignment="center"
+                android:paddingStart="@dimen/margin_16dp"
+                android:paddingEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/avenir_black"/>
+
+            <Button
+                android:id="@+id/btn_detect_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_40"
+                android:background="@drawable/btn_bg"
+                android:layout_marginStart="@dimen/margin_36dp"
+                android:layout_marginEnd="@dimen/margin_36dp"
+                android:fontFamily="@font/avenir_roman"
+                android:paddingStart="@dimen/margin_4dp"
+                android:paddingTop="@dimen/margin_12dp"
+                android:paddingEnd="@dimen/margin_4dp"
+                android:paddingBottom="@dimen/margin_12dp"
+                android:text="@string/detect_location"
+                android:textColor="@color/color_white"
+                android:textSize="14sp"
+                android:textAllCaps="false">
+            </Button>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</layout>

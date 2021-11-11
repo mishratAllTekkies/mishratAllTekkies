@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Brandic" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/splashColor</item>
+        <item name="colorPrimaryVariant">@color/splashColor</item>
+        <item name="colorOnPrimary">@color/splashColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/splashColor</item>
+        <item name="colorSecondaryVariant">@color/splashColor</item>
+        <item name="colorOnSecondary">@color/splashColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/splashColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="colorPrimary">@color/colorTextOrange</item>
+        <item name="android:textSize">@dimen/font_14sp</item>
+    </style>
+
+
+    <style name="ActionBarTextAppearance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/font_16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="font">@font/avenir_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OptionsMenuTheme" parent="@style/Theme.Brandic">
+        <item name="android:textColor">@color/splashColor</item>
+        <item name="android:fontFamily">@font/avenir_black</item>
+        <item name="android:textSize">@dimen/font_14sp</item>
+        <item name="android:background">@color/splashColor</item>
+    </style>
+
+
+    <style name="TabLayout" parent="Theme.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:fontFamily">@font/avenir_black</item>
+        <item name="android:textSize">12sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlNormal">@color/dark_text</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+</resources>
