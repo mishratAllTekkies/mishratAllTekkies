@@ -21,6 +21,12 @@
     </style>
 
 
+    <style name="newTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+
     <style name="ActionBarTextAppearance" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">@dimen/font_16sp</item>
         <item name="android:textColor">#FFFFFF</item>

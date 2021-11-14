@@ -3,17 +3,45 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/back_arrow.xml" value="0.20833333333333334" />
         <entry key="..\:/ZBCard/app/src/main/res/drawable/btn_gradient.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/btn_select_gender.xml" value="0.20833333333333334" />
         <entry key="..\:/ZBCard/app/src/main/res/drawable/dailcode_bg.xml" value="0.33203125" />
         <entry key="..\:/ZBCard/app/src/main/res/drawable/edit_text_bg.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/edit_text_bg_selected.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/edit_text_bg_white.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/edit_text_selector.xml" value="0.20833333333333334" />
         <entry key="..\:/ZBCard/app/src/main/res/drawable/email_mobile_icon.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/ic_close.xml" value="0.20833333333333334" />
         <entry key="..\:/ZBCard/app/src/main/res/drawable/ic_sign_up.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/ic_toolbar.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/drawable/kyc_rect_bg.xml" value="0.20833333333333334" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_about_us.xml" value="0.2" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_complete_kyc.xml" value="0.22" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_date_of_birth.xml" value="0.22" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_little_more.xml" value="0.1921875" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_opt_verify.xml" value="0.1921875" />
-        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_signup.xml" value="0.18" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_otp_verify.xml" value="0.16" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_set_your_pin.xml" value="0.18" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_signup.xml" value="0.22" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_user_name.xml" value="0.2" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/app_bar_layout_menu.xml" value="0.25" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/app_scan_activity_layout.xml" value="0.1921875" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/category_detail_fragment.xml" value="0.1921875" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/detect_location_activity.xml" value="0.1921875" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/dialog_id_information.xml" value="0.25" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/dialog_kyc_successfully_done.xml" value="0.18" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/dialog_select_country.xml" value="0.2" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/dialog_start_kyc.xml" value="0.2" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/dialog_user_dob.xml" value="0.22" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/dialog_user_gender.xml" value="0.25" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/dialog_verify_kyc.xml" value="0.1921875" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/home_activity.xml" value="0.1921875" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/image_preview_adapter.xml" value="0.1921875" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/map_activity.xml" value="0.1921875" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/splash_activity.xml" value="0.18" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/toolbar_primary.xml" value="0.2" />
       </map>
     </option>
   </component>

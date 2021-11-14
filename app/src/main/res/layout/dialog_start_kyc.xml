@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_400"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_10"
+                android:background="@drawable/kyc_rect_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/avenir_book"
+                    android:padding="10dp"
+                    android:text="@string/kyc"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ivCancel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_close" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/color_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/id_number"
+                    android:textSize="12sp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/avenir_book"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_profession"
+                    android:background="@drawable/edit_text_bg"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_5">
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:background="@null"
+                        android:fontFamily="@font/avenir_book"
+                        android:hint="@string/enter_id_number"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:padding="@dimen/dimen_10"
+                        android:textColor="@color/colorTextHeading"
+                        android:textColorHint="@color/colorTextHeading"
+                        android:textSize="@dimen/font_16sp"
+                        tools:ignore="RelativeOverlap,TextFields,TextViewEdits" />
+
+                </RelativeLayout>
+
+
+
+                <Button
+                    android:id="@+id/btn_scan_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:background="@drawable/btn_gradient"
+                    android:backgroundTint="@color/sign_up_green"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="@string/scan_your_id"
+                    android:layout_marginBottom="@dimen/dimen_50"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_16sp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_browse_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/browse_from_device"
+                    android:textColor="@color/sign_up_green"
+                    android:textSize="@dimen/font_16sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:paddingEnd="@dimen/margin_16dp"
+                    android:fontFamily="@font/avenir_book"/>
+
+
+                <View
+                    android:layout_width="@dimen/dimen_180"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

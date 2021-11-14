@@ -17,17 +17,171 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <include
+            android:id="@+id/llTop"
+            layout="@layout/toolbar_primary" />
+
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/ivLocation"
-            android:layout_width="409dp"
+            android:id="@+id/ivMobile"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="104dp"
+            android:layout_marginTop="@dimen/dimen_70"
             android:src="@drawable/ic_otp_mobile"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_verification_code"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="@dimen/font_22sp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/ivMobile"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:fontFamily="@font/avenir_black"/>
+
+
+        <TextView
+            android:id="@+id/tv_mobile_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sent_code_to_the_phone_number"
+            android:textColor="@color/lightGrey"
+            android:textSize="@dimen/font_14sp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category_name"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:paddingStart="@dimen/margin_16dp"
+            android:paddingEnd="@dimen/margin_16dp"
+            android:fontFamily="@font/avenir_book"/>
+
+        <TextView
+            android:id="@+id/tv_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+966-52163526"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="@dimen/font_18sp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mobile_text"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:paddingStart="@dimen/margin_16dp"
+            android:paddingEnd="@dimen/margin_16dp"
+            android:fontFamily="@font/avenir_black"/>
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:fontFamily="@font/avenir_book"
+            android:text="@string/enter_the_6_digit_code"
+            android:visibility="visible"
+            android:layout_marginStart="@dimen/dimen_20"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="@dimen/font_16sp" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otpView"
+            style="@style/newTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="textPassword"
+            android:itemBackground="@drawable/edit_text_selector"
+            app:itemCount="6"
+            app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+            android:textColor="@color/sign_up_green"
+            android:textSize="16sp"
+            app:itemHeight="40dp"
+            app:itemRadius="@dimen/dimen_7"
+            app:itemSpacing="@dimen/dimen_10"
+            app:itemWidth="50dp"
+            app:viewType="none"
+            tools:ignore="MissingConstraints">
+
+            <requestFocus />
+        </com.mukesh.OtpView>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_24"
+            app:layout_constraintTop_toBottomOf="@+id/otpView">
+
+            <Button
+                android:id="@+id/btn_otp_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gradient"
+                android:backgroundTint="@color/sign_up_green"
+                android:fontFamily="@font/avenir_black"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/avenir_book"
+                    android:text="@string/didn_recieve_code"
+                    android:textAlignment="center"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="@dimen/font_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:id="@+id/tvTermsAtLogin"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="@string/resend_otp"
+                    android:textAlignment="center"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="@dimen/font_14sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

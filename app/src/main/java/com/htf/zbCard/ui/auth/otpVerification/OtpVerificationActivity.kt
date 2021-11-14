@@ -7,8 +7,10 @@ import android.view.View
 import com.htf.zbCard.R
 import com.htf.zbCard.base.BaseActivity
 import com.htf.zbCard.databinding.ActivityOtpVerifyBinding
+import com.htf.zbCard.ui.auth.profile.DateOfBirthActivity
 import com.htf.zbCard.ui.auth.signUp.SignUpViewModel
 import com.htf.zbCard.ui.location.MapActivity
+import kotlinx.android.synthetic.main.activity_otp_verify.*
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class OtpVerificationActivity: BaseActivity<ActivityOtpVerifyBinding, SignUpViewModel>(
@@ -31,13 +33,13 @@ class OtpVerificationActivity: BaseActivity<ActivityOtpVerifyBinding, SignUpView
 
 
     private fun setListener() {
-      //  btnSignup.setOnClickListener(this)
+        btn_otp_verify.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
-            R.id.btnSignup->{
-              //  MapActivity.open(currActivity)
+            R.id.btn_otp_verify->{
+                DateOfBirthActivity.open(currActivity)
             }
         }
     }

@@ -18,5 +18,8 @@
     <color name="sign_up_green">#2C6961</color>
     <color name="colorEditTextStroke">#DDDDDD</color>
     <color name="colorTextHeading">#333333</color>
+    <color name="otp_fill_color">#C5CFD1</color>
+    <color name="color_about_grey">#929292</color>
+    <color name="light_green">#E2F4F2</color>
 
 </resources>

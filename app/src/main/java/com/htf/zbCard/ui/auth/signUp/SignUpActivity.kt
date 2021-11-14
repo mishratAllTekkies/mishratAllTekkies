@@ -7,6 +7,7 @@ import android.view.View
 import com.htf.zbCard.R
 import com.htf.zbCard.base.BaseActivity
 import com.htf.zbCard.databinding.ActivitySignupBinding
+import com.htf.zbCard.ui.auth.login.LoginActivity
 import com.htf.zbCard.ui.auth.otpVerification.OtpVerificationActivity
 import com.htf.zbCard.ui.location.MapActivity
 import kotlinx.android.synthetic.main.activity_signup.*
@@ -34,14 +35,19 @@ class SignUpActivity : BaseActivity<ActivitySignupBinding, SignUpViewModel>(
 
     private fun setListener() {
         btnSignup.setOnClickListener(this)
+        ll_login.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
-            R.id.btnSignup->{
+            R.id.btnSignup-> {
                 OtpVerificationActivity.open(currActivity)
             }
-        }
+
+            R.id.ll_login->{
+                    LoginActivity.open(currActivity)
+                }
+            }
     }
 
 }

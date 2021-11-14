@@ -22,7 +22,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/toolbar_title"
                 style="@style/TextAppearance.AppCompat.Title"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginEnd="?android:attr/actionBarSize"
@@ -30,6 +30,7 @@
                 android:fontFamily="@font/avenir_black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:visibility="gone"
                 android:textColor="@android:color/white"
                 tools:text="Title" />
         </androidx.appcompat.widget.Toolbar>

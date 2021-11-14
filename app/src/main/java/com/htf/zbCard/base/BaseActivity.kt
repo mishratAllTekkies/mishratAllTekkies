@@ -144,8 +144,8 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel>(private val 
                     AppSession.isLocaleEnglish = false
                 }
                 else -> {
-                    conf.setLocale(Locale("ar"))
-                    AppSession.locale = "ar"
+                    conf.setLocale(Locale("en"))
+                    AppSession.locale = "en"
                     AppSession.isLocaleEnglish = false
                 }
             }
