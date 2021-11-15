@@ -9,6 +9,7 @@ import com.htf.zbCard.base.BaseActivity
 import com.htf.zbCard.databinding.ActivityUserNameBinding
 import com.htf.zbCard.ui.auth.signUp.SignUpViewModel
 import kotlinx.android.synthetic.main.activity_user_name.*
+import kotlinx.android.synthetic.main.toolbar_primary.*
 
 class UserNameActivity: BaseActivity<ActivityUserNameBinding, SignUpViewModel>(
  SignUpViewModel::class.java), View.OnClickListener  {
@@ -31,12 +32,16 @@ class UserNameActivity: BaseActivity<ActivityUserNameBinding, SignUpViewModel>(
 
     private fun setListener() {
         btn_continue_name.setOnClickListener(this)
+        btnBack.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.btn_continue_name->{
                   AboutUsActivity.open(currActivity)
+            }
+            R.id.btnBack->{
+                onBackPressed()
             }
         }
     }

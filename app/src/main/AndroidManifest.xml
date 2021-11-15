@@ -36,6 +36,8 @@
         <activity android:name=".ui.auth.completeKyc.CompleteKycActivity"/>
         <activity android:name=".ui.auth.completeKyc.AppScanActivity"/>
         <activity android:name=".ui.auth.login.LoginActivity"/>
+        <activity android:name=".ui.auth.personalisedCard.PersonalisedCardActivity"/>
+        <activity android:name=".ui.auth.personalisedCard.CardGenerateActivity"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

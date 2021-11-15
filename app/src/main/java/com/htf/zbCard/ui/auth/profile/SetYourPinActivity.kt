@@ -10,6 +10,7 @@ import com.htf.zbCard.databinding.ActivitySetYourPinBinding
 import com.htf.zbCard.ui.auth.completeKyc.CompleteKycActivity
 import com.htf.zbCard.ui.auth.signUp.SignUpViewModel
 import kotlinx.android.synthetic.main.activity_set_your_pin.*
+import kotlinx.android.synthetic.main.toolbar_primary.*
 
 class SetYourPinActivity :BaseActivity<ActivitySetYourPinBinding, SignUpViewModel>(
     SignUpViewModel::class.java), View.OnClickListener {
@@ -33,12 +34,17 @@ class SetYourPinActivity :BaseActivity<ActivitySetYourPinBinding, SignUpViewMode
 
     private fun setListener() {
         btn_set_login_pin.setOnClickListener(this)
+        btnBack.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.btn_set_login_pin -> {
                 CompleteKycActivity.open(currActivity)
+            }
+
+            R.id.btnBack->{
+                onBackPressed()
             }
         }
     }

@@ -92,4 +92,11 @@
     <string name="enter_email_mobile">Enter your Email Id or phone or user id</string>
     <string name="forgot_pin">Forgot PIN?</string>
     <string name="forgot_user_id">Forgot user id?</string>
+    <string name="generate_card">Generating your personalised card\ncard</string>
+    <string name="card_info">We understand your needs and based upon you location we will provide the best services...</string>
+    <string name="generating_card">Generating card....</string>
+    <string name="hurry">Hurray !</string>
+    <string name="set_experience">You are all set to experience awesomeness</string>
+    <string name="card_generated">Your custom ca has been genertaed. lets start your ZB journey..</string>
+    <string name="Star_zb_journey">Start ZB Journey</string>
 </resources>

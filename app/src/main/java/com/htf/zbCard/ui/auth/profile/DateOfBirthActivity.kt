@@ -15,6 +15,7 @@ import com.htf.zbCard.databinding.ActivityDateOfBirthBinding
 import com.htf.zbCard.ui.auth.signUp.SignUpViewModel
 import kotlinx.android.synthetic.main.activity_date_of_birth.*
 import kotlinx.android.synthetic.main.dialog_id_information.view.*
+import kotlinx.android.synthetic.main.toolbar_primary.*
 
 class DateOfBirthActivity : BaseActivity<ActivityDateOfBirthBinding, SignUpViewModel>(
     SignUpViewModel::class.java), View.OnClickListener  {
@@ -39,6 +40,7 @@ class DateOfBirthActivity : BaseActivity<ActivityDateOfBirthBinding, SignUpViewM
         btn_born.setOnClickListener(this)
         ivInformation.setOnClickListener(this)
         rlt_date_select.setOnClickListener(this)
+        btnBack.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -54,7 +56,9 @@ class DateOfBirthActivity : BaseActivity<ActivityDateOfBirthBinding, SignUpViewM
             R.id.rlt_date_select->{
                 userSelectDob(currActivity)
             }
-
+            R.id.btnBack->{
+                onBackPressed()
+            }
         }
     }
 

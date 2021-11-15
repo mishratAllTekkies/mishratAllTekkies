@@ -12,12 +12,14 @@ import android.view.WindowManager
 import com.htf.zbCard.R
 import com.htf.zbCard.base.BaseActivity
 import com.htf.zbCard.databinding.ActivityCompleteKycBinding
+import com.htf.zbCard.ui.auth.personalisedCard.PersonalisedCardActivity
 import com.htf.zbCard.ui.auth.signUp.SignUpViewModel
 import kotlinx.android.synthetic.main.activity_complete_kyc.*
 import kotlinx.android.synthetic.main.activity_set_your_pin.*
 import kotlinx.android.synthetic.main.dialog_start_kyc.view.*
 import kotlinx.android.synthetic.main.dialog_start_kyc.view.ivCancel
 import kotlinx.android.synthetic.main.dialog_verify_kyc.view.*
+import kotlinx.android.synthetic.main.toolbar_primary.*
 
 open class CompleteKycActivity :BaseActivity<ActivityCompleteKycBinding, SignUpViewModel>(
     SignUpViewModel::class.java), View.OnClickListener {
@@ -41,13 +43,18 @@ open class CompleteKycActivity :BaseActivity<ActivityCompleteKycBinding, SignUpV
 
     private fun setListener() {
         btn_start_kyc.setOnClickListener(this)
+        btnBack.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.btn_start_kyc -> {
-            //    userCompleteKyc(currActivity)
+                userCompleteKyc(currActivity)
             }
+            R.id.btnBack->{
+                onBackPressed()
+            }
+
         }
     }
 
@@ -126,6 +133,7 @@ open class CompleteKycActivity :BaseActivity<ActivityCompleteKycBinding, SignUpV
         builder.setCancelable(true)
 
         dialogLangView.btn_verify_otp.setOnClickListener {
+            PersonalisedCardActivity.open(currActivity)
             builder!!.dismiss()
         }
 

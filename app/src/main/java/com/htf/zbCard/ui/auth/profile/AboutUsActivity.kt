@@ -15,6 +15,7 @@ import com.htf.zbCard.databinding.ActivityAboutUsBinding
 import com.htf.zbCard.ui.auth.signUp.SignUpViewModel
 import kotlinx.android.synthetic.main.activity_about_us.*
 import kotlinx.android.synthetic.main.dialog_id_information.view.*
+import kotlinx.android.synthetic.main.toolbar_primary.*
 
 class AboutUsActivity : BaseActivity<ActivityAboutUsBinding, SignUpViewModel>(
     SignUpViewModel::class.java), View.OnClickListener {
@@ -40,6 +41,7 @@ class AboutUsActivity : BaseActivity<ActivityAboutUsBinding, SignUpViewModel>(
         btn_continue_name.setOnClickListener(this)
         rlt_nationality.setOnClickListener(this)
         rlt_gender.setOnClickListener(this)
+        btnBack.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -55,6 +57,9 @@ class AboutUsActivity : BaseActivity<ActivityAboutUsBinding, SignUpViewModel>(
             R.id.rlt_gender -> {
                 userGender(currActivity)
              }
+            R.id.btnBack->{
+                onBackPressed()
+            }
         }
     }
 

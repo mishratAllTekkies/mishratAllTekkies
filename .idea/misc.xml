@@ -19,10 +19,12 @@
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_about_us.xml" value="0.2" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_complete_kyc.xml" value="0.22" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_date_of_birth.xml" value="0.22" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_generate_card.xml" value="0.16" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_little_more.xml" value="0.1921875" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_opt_verify.xml" value="0.1921875" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_otp_verify.xml" value="0.16" />
+        <entry key="..\:/ZBCard/app/src/main/res/layout/activity_personalised_card.xml" value="0.22" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_set_your_pin.xml" value="0.18" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_signup.xml" value="0.22" />
         <entry key="..\:/ZBCard/app/src/main/res/layout/activity_user_name.xml" value="0.2" />
